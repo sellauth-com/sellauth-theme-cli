@@ -1,0 +1,49 @@
+{
+  "name": "sellauth-theme-cli",
+  "version": "0.1.0",
+  "description": "Official CLI for developing SellAuth themes locally.",
+  "type": "module",
+  "bin": {
+    "sellauth-theme": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "commands",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "prepare": "chmod +x bin/index.js",
+    "format": "prettier --write \"**/*.js\""
+  },
+  "keywords": [
+    "sellauth",
+    "themes",
+    "ecommerce",
+    "cli"
+  ],
+  "author": "SellAuth",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "autoprefixer": "^10.4.24",
+    "axios": "^1.13.5",
+    "chalk": "^5.6.2",
+    "chokidar": "^3.6.0",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "form-data": "^4.0.5",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^13.2.4",
+    "ora": "^9.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
