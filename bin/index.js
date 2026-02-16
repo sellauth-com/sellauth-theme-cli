@@ -17,7 +17,7 @@ dotenv.config({ quiet: true });
 
 const program = new Command();
 
-program.name('sellauth-theme').description('SellAuth Theme CLI').version('0.1.1');
+program.name('sellauth-theme').description('SellAuth Theme CLI').version('0.1.2');
 
 program
   .command('help')
