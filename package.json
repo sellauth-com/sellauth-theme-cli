@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "description": "Official CLI for developing SellAuth themes locally.",
   "type": "module",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sellauth-com/sellauth-theme-cli.git"
+  },
+  "homepage": "https://github.com/sellauth-com/sellauth-theme-cli#readme",
+  "bugs": {
+    "url": "https://github.com/sellauth-com/sellauth-theme-cli/issues"
+  },
   "bin": {
     "sellauth-theme": "./bin/index.js"
   },
