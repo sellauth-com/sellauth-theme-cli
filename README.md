@@ -36,6 +36,8 @@ Your **Shop ID** can also be found on the same page.
 
 ## 🆔 Finding Your Theme ID
 
+### Option 1: From Dashboard
+
 Go to:
 
 Storefront → Themes
@@ -48,6 +50,21 @@ You will be redirected to:
 
 The number in the URL is your **Theme ID**.
 
+### Option 2: Using the CLI (Recommended)
+
+You can list all your shops and their theme IDs directly from the CLI:
+
+`sellauth-theme list-ids`
+
+This command will print:
+
+- All shops on your account
+- Their corresponding Shop IDs
+- All themes within each shop
+- Each theme’s Theme ID
+
+This is the fastest way to retrieve both **Shop IDs** and **Theme IDs** without opening the dashboard.
+
 ## 🏬 Multiple Shops
 
 If your account has multiple shops, you must specify:
@@ -56,17 +73,6 @@ If your account has multiple shops, you must specify:
 
 This argument is supported on all commands that interact with a shop.
 If your account has only one shop, the CLI will use it automatically.
-
-## 📁 Initialize Local Theme
-
-Download and select a theme from your account:
-
-`sellauth-theme init [--shop <shopId>]`
-
-This will:
-- Show a list of available themes
-- Download the selected theme locally
-- Create the `themes/` directory if it doesn’t exist
 
 ## 🎨 Create a Theme
 

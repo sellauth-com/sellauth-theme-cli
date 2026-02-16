@@ -6,12 +6,12 @@ import { getConfig } from '../lib/config.js';
 import SellAuthAPI from '../lib/sellauth-api.js';
 
 import registerLoginCommand from '../commands/login.js';
-import registerInitCommand from '../commands/init.js';
 import registerCreateCommand from '../commands/create.js';
 import registerPullCommand from '../commands/pull.js';
 import registerPushCommand from '../commands/push.js';
 import registerWatchCommand from '../commands/watch.js';
 import registerApplyCommand from '../commands/apply.js';
+import registerListIdsCommand from '../commands/listIds.js';
 
 dotenv.config({ quiet: true });
 
@@ -41,12 +41,12 @@ async function bootstrap() {
   }
 
   registerLoginCommand(program, api);
-  registerInitCommand(program, api);
   registerCreateCommand(program, api);
   registerPullCommand(program, api);
   registerPushCommand(program, api);
   registerWatchCommand(program, api);
   registerApplyCommand(program, api);
+  registerListIdsCommand(program, api);
 
   program.parse(process.argv);
 }
