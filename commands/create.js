@@ -36,8 +36,8 @@ export default function registerCreateCommand(program, api) {
         }
 
         console.log(chalk.green('🎉 Theme created successfully!'));
-        console.log(`Theme ID: ${response.theme.id}`);
-        console.log(`Name: ${response.theme.name}`);
+        console.log(`Run the following command to pull the theme files:`);
+        console.log(chalk.cyan(`sellauth-theme pull --theme ${response.theme.id}`));
       } catch (error) {
         if (spinner.isSpinning) spinner.stop();
 
