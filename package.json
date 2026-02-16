@@ -1,6 +1,6 @@
 {
   "name": "sellauth-theme-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Official CLI for developing SellAuth themes locally.",
   "type": "module",
   "preferGlobal": true,
